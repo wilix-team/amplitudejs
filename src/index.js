@@ -514,13 +514,6 @@ let Amplitude = (function () {
 	}
 
 	/**
-	 * @TODO: Implement Add Song To Playlist Functionality
-	 */
-	function addSongToPlaylist( song, playlist ){
-
-	}
-
-	/**
 	 * Allows the user to play whatever the active song is directly
 	 * through Javascript. Normally ALL of Amplitude functions that access
 	 * the core features are called through event handlers.
