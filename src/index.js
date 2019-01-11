@@ -678,13 +678,13 @@ let Amplitude = (function () {
 	function getSongsStatePlaylist( playlist ){
 		let songsArray = [];
 
-		if( config.shuffled_status[playlist] ){
+		if( config.shuffled_statuses[playlist] && config.shuffled_playlists[playlist]){
 
 			for( let i = 0; i < config.shuffled_playlists[playlist].length; i++ ){
 				songsArray.push( config.songs[i] );
 			}
 
-		}else{
+		}else if( config.playlists[playlist] ){
 
 			for( let i = 0; i < config.playlists[playlist].length; i++ ){
 				songsArray.push( config.songs[i] );
